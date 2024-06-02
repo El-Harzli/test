@@ -28,10 +28,12 @@
 
 
 
-    --color-primary : #00224D;
+    --color-primary : #030a37;
     --color-secondary: white;
-    --color-dark_accent: hsl(348, 84%, 45%);
-    --color-light_accent: hsl(348, 94%, 55%);
+    /* --color-dark_accent: hsl(348, 84%, 45%);
+    --color-light_accent: hsl(348, 94%, 55%); */
+    --color-dark_accent:  hsl(45, 90%, 45%);
+    --color-light_accent: #FFC100;
 
 
     --main-color_primary : var(--color-primary);
@@ -126,7 +128,7 @@ a{
 /* Start of NavBar */
 
 .header{
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
