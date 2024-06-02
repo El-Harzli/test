@@ -44,16 +44,16 @@
     --aside-color_secondary : var(--color-primary);
     --aside-color_accent : var(--color-light_accent);
 
-    --fs-000: 0.65rem;
-    --fs-100: 0.75rem;  /* Small text */
+    --fs-000: 0.7rem;
+    --fs-100: 0.8rem;  /* Small text */
     --fs-200: 0.875rem; /* Slightly larger small text */
     --fs-300: 1rem;     /* Base font size (normal paragraphs) */
     --fs-400: 1.125rem; /* Slightly larger than base */
     --fs-500: 1.25rem;  /* Subheadings */
     --fs-600: 1.5rem;   /* Smaller headings */
-    --fs-700: 1.75rem;  /* Medium headings */
-    --fs-800: 2rem;     /* Large headings */
-    --fs-900: 2.5rem;   /* Very large headings */
+    --fs-700: 1.8rem;  /* Medium headings */
+    --fs-800: 2.1rem;     /* Large headings */
+    --fs-900: 2.6rem;   /* Very large headings */
 
     /* Specific section */
     --fs-header-section: 2.6rem;
@@ -87,6 +87,7 @@ html{
 body {
     font-family: 'Graphik Trial', sans-serif;
     line-height: 1.2;
+    letter-spacing: 0.5px;
     height: 2500px;
     background-color: var(--main-color_primary);
     color: white;
@@ -125,7 +126,7 @@ a{
 /* Start of NavBar */
 
 .header{
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
@@ -203,7 +204,9 @@ a{
 }
 
 @media (width < 768px) {
-
+    .header{
+        padding: 0.75rem 5%;
+    }
     .logo{
         width: 100px;
         height: 25px;
@@ -342,11 +345,11 @@ a{
     display: inline-block;
     min-width: fit-content;
     color: var(--main-color_secondary);
-    font-size: var(--fs-200);
+    font-size: var(--fs-000);
     font-weight: var(--fw-medium);
     border: 2px solid var(--main-color_secondary);
-    padding: 0.35rem 0.75rem;
-    letter-spacing: 0.35px;
+    padding: 0.45rem 0.75rem;
+    letter-spacing: 0.5px;
     border-radius: 4px;
     transition: 0.4s ease;
 }
@@ -397,8 +400,8 @@ section.hero{
 }
 
 .library-subtitle{
-    font-size: var(--fs-300);
-    font-weight: var(--fw-medium);
+    font-size: var(--fs-200);
+    font-weight: var(--fw-semibold);
     color: var(--main-color_accent);
     width: max-content;
     margin-inline: auto;
@@ -423,7 +426,7 @@ section.hero{
     margin-inline: auto;
     text-align: center;
     font-size: var(--fs-400);
-    font-weight: var(--fw-regular);
+    font-weight: var(--fw-light);
 }
 
 /*HARD PART*/
@@ -501,3 +504,65 @@ img {
     padding-bottom: 3rem;
     border-bottom: 1px solid var(--colors-base_grey400);
 }
+
+/* End of library section */
+
+/* Start of library section */
+
+.trial{
+    margin-block: 3rem 1.5rem;
+}
+
+.trial-subtitle{
+    font-size: var(--fs-100);
+    font-weight: var(--fw-semibold);
+    color: var(--main-color_accent);
+    width: max-content;
+    margin-inline: auto;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.trial-title{
+    font-size: var(--fs-700);
+    font-weight: var(--fw-semibold);
+    padding-inline: 0.5rem;
+    margin-inline: auto;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    margin-block: 1rem 0.8rem;
+}
+
+.trial-description{
+    width: 100%;
+    padding-inline: 5%;
+    margin-inline: auto;
+    text-align: center;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-light);
+}
+
+.trial-CTA{
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.trial-CTA .cta{
+    padding: 1rem 1rem;
+    color: black;
+    background-color: #3CCE77;
+    border-color: #3CCE77;
+}
+
+.trial-warning{
+    font-size: var(--fs-000);
+    font-weight: var(--fw-light);
+    color: var(--colors-base_grey400);
+    text-align: center;
+    margin-top: 0.5rem;
+    padding-inline: 7%;
+    line-height: 1.1;
+}
+
+
