@@ -549,13 +549,13 @@ img {
 }
 
 .trial-CTA .cta{
-    font-size: var(--fs-400);
+    font-size: var(--fs-300);
     font-weight: var(--fw-medium);
-    letter-spacing: 0.6px;
-    padding: 1rem 1.35rem;
+    letter-spacing: 0.45px;
+    padding: 0.75rem 1.2rem;
     color: black;
-    background-color: #3CCE77;
-    border-color: #3CCE77;
+    background-color: #FFC100;
+    border-color: #FFC100;
 }
 
 .trial-warning{
