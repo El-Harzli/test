@@ -128,7 +128,7 @@ a{
 /* Start of NavBar */
 
 .header{
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -272,7 +272,7 @@ a{
 /* START OF HERO SECTION */
 
 .hero{
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
 }
 
 .hero-container{
