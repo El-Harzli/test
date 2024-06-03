@@ -39,16 +39,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
       switch (id) {
         case 'live-sports':
-            background.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url('/images/mobile/sports.png')";
+            background.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url('images/mobile/sports.png')";
             break;
         case 'breaking-news':
-            background.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url('/images/mobile/news.png')";
+            background.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url('images/mobile/news.png')";
             break;
         case 'biggest-events':
-            background.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url('/images/mobile/awards.png')";
+            background.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url('images/mobile/awards.png')";
             break;
         default:
-            background.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url('/images/mobile/sports.png')";
+            background.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url('images/mobile/sports.png')";
             break;
     }
 
