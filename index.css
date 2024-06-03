@@ -684,7 +684,7 @@ img {
     text-align: center;
     margin-inline: auto;
     overflow: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url('/images/mobile/sports.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url('images/mobile/sports.png');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
