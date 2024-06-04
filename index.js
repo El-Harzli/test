@@ -158,3 +158,18 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 });
+
+
+
+
+document.getElementById('mainButton').addEventListener('click', function() {
+    document.getElementById('mainButton').style.display = 'none';
+    const socialButtons = document.getElementById('socialButtons');
+    socialButtons.style.display = 'flex';
+    socialButtons.style.animation = 'slide-in 0.3s forwards';
+});
+
+document.getElementById('closeButton').addEventListener('click', function() {
+    document.getElementById('socialButtons').style.display = 'none';
+    document.getElementById('mainButton').style.display = 'flex';
+});
