@@ -812,8 +812,8 @@ img {
 
 .contact-widget {
     position: fixed;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 1.1rem;
+    right: 1.1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -821,12 +821,12 @@ img {
 }
 
 .main-button {
-    font-size: 2rem;
+    font-size: 1.9rem;
     background-color: #007bff;
     color: white;
     display: inline-flex;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
@@ -875,8 +875,8 @@ img {
     color: #007bff;
     text-align: center;
     display: inline-flex;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: 0.6rem;
@@ -891,7 +891,7 @@ img {
 }
 
 .social-button i{
-    font-size: 2.5rem;
+    font-size: 2.35rem;
 }
 
 
@@ -905,13 +905,13 @@ img {
     background-color: #ff4d4d;
     color: white;
     text-align: center;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
-    font-size: 2.5rem;
+    font-size: 2.35rem;
 }
 
 .close-button:hover {
