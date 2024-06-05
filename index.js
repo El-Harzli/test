@@ -173,3 +173,15 @@ document.getElementById('closeButton').addEventListener('click', function() {
     document.getElementById('socialButtons').style.display = 'none';
     document.getElementById('mainButton').style.display = 'flex';
 });
+
+
+
+
+// Toggle
+document.getElementById('toggle-button').addEventListener('change', function() {
+    if (this.checked) {
+        console.log('VIP');
+    } else {
+        console.log('Premium');
+    }
+});

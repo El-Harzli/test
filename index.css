@@ -18,6 +18,7 @@
     --colors-utility_red200: #D40909;
     --colors-utility_yellow100: #FFB63F;
     --colors-utility_yellow200: #E68810;
+    --colors-gold : #FFC100;
     --colors-hulu_primary: hsl(150, 81%, 51%);
     --colors-hulu_secondary: #7DFFBF;
     --colors-hulu_tertiary: hsl(150, 75%, 44%);
@@ -77,6 +78,29 @@
     --fw-header-section: 600
 }
 
+@media (min-width : 768px) {
+    html{
+        
+    }
+}
+
+@media (min-width : 992px) {
+
+}
+@media (min-width : 1400px) {
+    :root{
+        --fs-000: 0.7rem;
+        --fs-100:  calc(0.775rem * 1.145); ;  /* Small text */
+        --fs-200: 0.875rem; /* Slightly larger small text */
+        --fs-300: calc(1rem * 1.125);     /* Base font size (normal paragraphs) */
+        --fs-400: 1.125rem; /* Slightly larger than base */
+        --fs-500: 1.25rem;  /* Subheadings */
+        --fs-600: 1.5rem;   /* Smaller headings */
+        --fs-700: calc(1.8rem * 1.65);  /* Medium headings */
+        --fs-800: 2rem;     /* Large headings */
+        --fs-900: 2.6rem;
+    } 
+}
 
 *, *::before, *::after{
     margin: 0;
@@ -407,7 +431,7 @@ section.hero{
 .library-subtitle{
     font-size: var(--fs-100);
     font-weight: var(--fw-semibold);
-    letter-spacing: 0.85px;
+    letter-spacing: 0.0px;
     color: var(--main-color_accent);
     width: max-content;
     margin-inline: auto;
@@ -448,7 +472,30 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    gap: 0.8rem;
+}
+
+@media (min-width : 768px) {
+
+    .library-container{
+        max-width: 786px;
+        gap: 1rem;
+    }
+    
+}
+
+@media (min-width : 992px) {
+    .library-container{
+        max-width: none;
+        width: 80%;
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1.5rem;
+    }
+}
+@media (min-width : 1400px) {
+    
 }
 .library-item-wrapper{
     display: inline-block;
@@ -561,8 +608,8 @@ img {
     letter-spacing: 0.1px;
     padding: 0.9rem 1.5rem;
     color: black;
-    background-color: #FFC100;
-    border-color: #FFC100;
+    background-color: var(--colors-gold);
+    border-color: var(--colors-gold);
 }
 
 .trial-warning{
@@ -610,6 +657,32 @@ img {
     gap: 1rem;
 }
 
+@media (min-width : 768px) {
+    .price-content{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    
+}
+
+@media (min-width : 992px) {
+    .price-content{
+        width: 80%;
+        
+    }
+}
+@media (min-width : 1400px) {
+    .price-content{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1rem;
+    }
+    
+}
+
+
 .price-card {
     background: linear-gradient(135deg, #ffffff, #f8f9fa); 
     border: 2px solid #00224D; /* Primary Color Border */
@@ -634,7 +707,7 @@ img {
     font-size: var(--fs-900);
     font-weight: var(--fw-bold);
     margin-block: 0.25rem 1rem;
-    color: #FFC100;
+    color: var(--colors-gold);
 }
 .price-features{
     /* background-color: var(--color-medium-grey); */
@@ -658,8 +731,8 @@ img {
     font-weight: var(--fw-bold);
     /* background-color: var(--main-color_primary); */
     /* border-color: var(--main-color_primary); */
-    background-color: #FFC100;
-    border-color: #FFC100;
+    background-color: var(--colors-gold);
+    border-color: var(--colors-gold);
 }
 .price-waiting-time{
     font-size: var(--fs-100);
@@ -916,4 +989,48 @@ img {
 
 .close-button:hover {
     transform: scale(1.1);
+}
+
+
+
+
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-button {
+    display: none;
+}
+
+.toggle-label {
+    width: 60px;
+    height: 30px;
+    background-color: var(--colors-utility_blue100);
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-label::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.toggle-button:checked + .toggle-label {
+    background-color: var(--colors-utility_yellow100);
+}
+
+.toggle-button:checked + .toggle-label::before {
+    transform: translateX(30px);
 }
