@@ -1056,7 +1056,8 @@ img {
 
 .faq-section {
     max-width: 800px;
-    margin: 3rem auto;
+    margin-inline: auto;
+    margin-block: 4.5rem;
     padding: 1.25rem;
     border: 2px solid #ddd;
     border-radius: 0.5rem;
@@ -1197,7 +1198,7 @@ img {
     transform: scale(1.1);
 }
 .social-links a:nth-child(1){
-    background-color: var(--colors-utility_blue200);
+    background-color: #4267B2;
 }
 .social-links a:nth-child(2){
     background-color: #0088cc;
