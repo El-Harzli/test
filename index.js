@@ -185,3 +185,24 @@ document.getElementById('toggle-button').addEventListener('change', function() {
         console.log('Premium');
     }
 });
+
+
+// Add to script.js
+
+document.addEventListener("DOMContentLoaded", () => {
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+        const questionButton = item.querySelector(".faq-question");
+
+        questionButton.addEventListener("click", () => {
+            const openItem = document.querySelector(".faq-item.open");
+
+            if (openItem && openItem !== item) {
+                openItem.classList.remove("open");
+            }
+
+            item.classList.toggle("open");
+        });
+    });
+});
