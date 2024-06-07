@@ -97,6 +97,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentSelection = 'premium'; // Default selection
 
+    let trialStarter = document.getElementById('trial-starter');
+    trialStarter.addEventListener("click", () => {
+        let message = `Hi there, I would like to request a free trial`;
+        let whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+    })
+
     function updateSelection(selected) {
         if (selected === 'premium') {
             slider.style.left = '5px';

@@ -130,6 +130,7 @@ li{
 a{
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* End of RESETS  */
@@ -997,6 +998,7 @@ img {
     font-size: var(--fs-500);
     font-weight: var(--fw-bold);
     background: gold;
+    color: #000000;
     border: none;
     overflow: hidden;
     z-index: 1;
@@ -1023,6 +1025,7 @@ img {
     background: none;
     background-color: var(--color-light_accent);
     border-color: var(--color-light_accent);
+    color: white;
     transition: 0.3s ease;
 
 }
