@@ -979,6 +979,46 @@ img {
 .price-CTA a:hover::before {
     width: 100%; /* Grow width to 100% on hover */
 }
+
+
+
+.price.vip{
+    color: gold;
+}
+
+.price-card.vip{
+    border: 2px solid gold;
+}
+
+
+.price-CTA.vip a {
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    font-size: var(--fs-500);
+    font-weight: var(--fw-bold);
+    background: gold;
+    border: none;
+    overflow: hidden;
+    z-index: 1;
+}
+.price-CTA.vip a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: gold;
+    transition: width 0.3s ease; /* Transition the width property */
+    z-index: -1;
+}
+
+.price-CTA.vip a:hover::before {
+    width: 100%; /* Grow width to 100% on hover */
+}
+
+
+
 .price-CTA.main a {
     background: none;
     background-color: var(--color-light_accent);
@@ -1055,50 +1095,92 @@ img {
 
 /* End of Ribbon */
 
+.price-toggle{
+    margin-top: 1.5rem;
+    font-size: var(--fs-300);
+}
 /* Start of Toggle */
 
 .toggle-container {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #ccc;
+    display: inline-flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
-.toggle-button {
-    display: none;
+.toggle-labels {
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1;
 }
 
 .toggle-label {
-    width: 60px;
-    height: 30px;
-    background-color: rgb(0 8 174);
-    border-radius: 15px;
-    position: relative;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    line-height: 40px;
+    transition: color 0.3s, background-color 0.3s;
+    /* border-radius: 25px; */
 }
 
-.toggle-label::before {
-    content: '';
+.toggle-label.active {
+    color: #fff;
+}
+
+#label-premium.active {
+    background-color: blue;
+    border-radius: 25px 0 0 25px;
+}
+#label-premium.inactive {
+    background-color: blue;
+    border-radius: 25px 0 0 25px;
+}
+
+
+
+#label-vip.active {
+    background-color: gold;
+    border-radius: 0 25px 25px 0;
+}
+#label-vip.inactive {
+    background-color: gold;
+    border-radius: 0 25px 25px 0;
+}
+.toggle-slider {
     position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 24px;
-    height: 24px;
-    background-color: white;
-    border-radius: 50%;
-    transition: transform 0.3s;
+    top: 5px;
+    left: 5px;
+    width: 145px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    z-index: 0;
 }
 
-.toggle-button:checked + .toggle-label {
-    background-color: var(--colors-utility_yellow100);
-}
-
-.toggle-button:checked + .toggle-label::before {
-    transform: translateX(30px);
+.selection-display {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /* End of Toggle */
+
+
+
+
+
+
+
 
 
 

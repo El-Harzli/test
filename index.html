@@ -164,9 +164,16 @@
                 <div class="price-title">Select Your Plan</div>
                 <div class="price-toggle">
                     <div class="toggle-container">
-                        <input type="checkbox" id="toggle-button" class="toggle-button">
-                        <label for="toggle-button" class="toggle-label"></label>
+                        <div class="toggle-labels">
+                            <span id="label-premium" class="toggle-label active">Premium</span>
+                            <span id="label-vip" class="toggle-label inactive">VIP</span>
+                        </div>
+                        <div class="toggle-slider" id="toggle-slider"></div>
                     </div>
+                    <div class="selection-display" id="selection-display">
+                        Selected Pack: <span id="selected-pack">PREMIUM</span>
+                    </div>
+                      
                 </div>
             </div>
             <div class="price-content">
@@ -187,7 +194,7 @@
                             </ul>
                         </div>
                         <div class="price-CTA">
-                            <a href="#" class="cta cta-primary">Buy Now</a>
+                            <a  class="cta cta-primary" data-plan="12 Months" data-price="$59.99">Buy Now</a>
                         </div>
                         <div class="price-waiting-time">
                             Ready within 5-7 minutes
@@ -213,7 +220,7 @@
                             </ul>
                         </div>
                         <div class="price-CTA main">
-                            <a href="#" class="cta cta-primary">Buy Now</a>
+                            <a class="cta cta-primary" data-plan="12 Months" data-price="$59.99">Buy Now</a>
                         </div>
                         <div class="price-waiting-time">
                             Ready within 5-7 minutes
@@ -237,7 +244,7 @@
                             </ul>
                         </div>
                         <div class="price-CTA">
-                            <a href="#" class="cta cta-primary">Buy Now</a>
+                            <a class="cta cta-primary" data-plan="12 Months" data-price="$59.99">Buy Now</a>
                         </div>
                         <div class="price-waiting-time">
                             Ready within 5-7 minutes
@@ -261,7 +268,7 @@
                             </ul>
                         </div>
                         <div class="price-CTA">
-                            <a href="#" class="cta cta-primary">Buy Now</a>
+                            <a class="cta cta-primary "data-plan="12 Months" data-price="$59.99">Buy Now</a>
                         </div>
                         <div class="price-waiting-time">
                             Ready within 5-7 minutes
