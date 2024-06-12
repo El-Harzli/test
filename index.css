@@ -1079,9 +1079,7 @@ img {
     z-index: -1;
 }
 
-.price-CTA.vip a:hover::before {
-    width: 100%; /* Grow width to 100% on hover */
-}
+
 
 
 .price.plat{
@@ -1106,6 +1104,9 @@ img {
 
     overflow: hidden;
     z-index: 1;
+}
+.price-CTA.plat a:hover {
+    color: white;
 }
 .price-CTA.plat a::before {
     content: '';
@@ -1154,14 +1155,10 @@ img {
 }
 
 .price-CTA.main.vip a:hover {
-    background: none;
-    background-color: #28282B;
-    border-color: #28282B;
+    background: hsl(51, 95%, 47%);
 }
 
-.price-CTA.main.vip a::before{
-    background : #28282B;
-}
+
 .price-CTA.main.plat a {
     background: none;
     background-color: #CBA1B3;
@@ -1173,12 +1170,12 @@ img {
 
 .price-CTA.main.plat a:hover {
     background: none;
-    background-color: #28282B;
-    border-color: #28282B;
+    background-color: #CBA1B3;
+    border-color: #CBA1B3;
 }
 
 .price-CTA.main.plat a::before{
-    background : #28282B;
+    background : #CBA1B3;
 }
 
 .price-waiting-time {
